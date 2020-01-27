@@ -13,3 +13,36 @@
  *= require_tree .
  *= require_self
  */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+nav{
+  font-family: 'Poppins', sans-serif;
+}
+
+ nav > .logo{
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+ }
+
+ nav > .logo:hover{
+  text-decoration: none;
+  color: white;
+  font-size: 31px;
+ }
+
+.right_nav_link{
+   text-decoration: none;
+   font-size: 20px;
+   color: white;
+  }
+
+.container{
+  margin: 70px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.title:hover{
+  color: black;
+}

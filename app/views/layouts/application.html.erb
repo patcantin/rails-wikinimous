@@ -4,12 +4,19 @@
     <title>RailsWikinimous</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://kit.fontawesome.com/02ee77e51b.js" crossorigin="anonymous"></script>
+    <%= stylesheet_link_tag 'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' %>
   </head>
 
   <body>
-    <%= yield %>
+    <nav class="navbar navbar-light bg-dark">
+     <%= link_to "Wikinimous", articles_path, :class => "logo" %>
+      <%= link_to "New Article", new_article_path, :class => "right_nav_link" %>
+    </nav>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
